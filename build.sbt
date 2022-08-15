@@ -1,4 +1,4 @@
-name := "-template"
+name := "example"
 
 version := "0.1.0"
 
@@ -37,8 +37,10 @@ homepage := Some(url("https://github.com/edadma/" + name.value))
 
 //libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.13" % "test"
 
-//libraryDependencies ++= Seq(
-//)
+libraryDependencies ++= Seq(
+  "io.github.spritzsn" %%% "spritz" % "0.1.0-pre.1",
+  "io.github.spritzsn" %%% "json" % "0.1.0-pre.1",
+)
 
 publishMavenStyle := true
 
