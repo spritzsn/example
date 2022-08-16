@@ -18,6 +18,6 @@ import io.github.spritzsn.json.JSON
         },
     )
     app.post("/", (req, res) => res.send(req.body))
-    app.listen(3000)
+    app.listen(3000, "ExampleServer/1.0")
     println("listening")
   }
