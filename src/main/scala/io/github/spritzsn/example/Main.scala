@@ -3,11 +3,9 @@ package io.github.spritzsn.example
 import cps.*
 import cps.monads.FutureAsyncMonad
 
-import scala.concurrent.duration.*
 import io.github.spritzsn.async.*
 import io.github.spritzsn.spritz.Server
 import io.github.spritzsn.json.JSON
-import io.github.spritzsn.libuv.defaultLoop
 
 @main def run(): Unit =
   Server { app =>
