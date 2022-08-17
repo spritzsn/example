@@ -1,8 +1,5 @@
 package io.github.spritzsn.example
 
-import cps.*
-import cps.monads.FutureAsyncMonad
-import io.github.spritzsn.async.*
 import io.github.spritzsn.spritz.{Request, Response, Server}
 import io.github.spritzsn.body_parser.JSON
 
