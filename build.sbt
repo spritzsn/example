@@ -40,8 +40,8 @@ homepage := Some(url("https://github.com/edadma/" + name.value))
 //libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.13" % "test"
 
 libraryDependencies ++= Seq(
-  "io.github.spritzsn" %%% "spritz" % "0.1.4",
-  "io.github.spritzsn" %%% "json" % "0.1.2",
+  "io.github.spritzsn" %%% "spritz" % "0.0.1",
+  "io.github.spritzsn" %%% "json" % "0.0.1",
 )
 
 publishMavenStyle := true
