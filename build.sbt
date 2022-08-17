@@ -41,7 +41,7 @@ homepage := Some(url("https://github.com/edadma/" + name.value))
 
 libraryDependencies ++= Seq(
   "io.github.spritzsn" %%% "spritz" % "0.0.1",
-  "io.github.spritzsn" %%% "json" % "0.0.1",
+  "io.github.spritzsn" %%% "body-parser" % "0.0.1",
 )
 
 publishMavenStyle := true
