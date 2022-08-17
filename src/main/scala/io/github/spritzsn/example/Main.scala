@@ -10,13 +10,7 @@ import io.github.spritzsn.json.JSON
 @main def run(): Unit =
   Server { app =>
     app.use(JSON)
-    app.get(
-      "/",
-      (req, res) =>
-        async {
-          res.send(await(spawn("/home/ed/dev-sn/test/target/scala-3.1.3/test-out", Vector("3", "4"))))
-        },
-    )
+    app.get("/", (req, res) => res.send("hello"))
     app.post("/", (req, res) => res.send(req.body))
     app.listen(3000, "ExampleServer/1.0")
     println("listening")
