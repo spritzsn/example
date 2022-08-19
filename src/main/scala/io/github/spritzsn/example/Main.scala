@@ -1,7 +1,8 @@
 package io.github.spritzsn.example
 
-import io.github.spritzsn.spritz.{Request, Response, Server, cors, responseTime}
+import io.github.spritzsn.spritz.{Request, Response, Server, responseTime}
 import io.github.spritzsn.body_parser.JSON
+import io.github.spritzsn.cors
 
 @main def run(): Unit =
   Server("ExampleServer/1.0") { app =>
