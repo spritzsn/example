@@ -43,7 +43,7 @@ libraryDependencies ++= Seq(
   "io.github.spritzsn" %%% "spritz" % "0.0.7",
   "io.github.spritzsn" %%% "body-parser" % "0.0.1",
   "io.github.spritzsn" %%% "cors" % "0.0.1",
-  "io.github.spritzsn" %%% "fs" % "0.0.1",
+  "io.github.spritzsn" %%% "serve-static" % "0.0.2",
 )
 
 publishMavenStyle := true
