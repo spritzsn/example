@@ -1,7 +1,7 @@
 package io.github.spritzsn.example
 
 import io.github.spritzsn.spritz.{Request, Response, Server, responseTime}
-import io.github.spritzsn.body_parser.JSON
+import io.github.spritzsn.body_parser.{urlencoded, JSON}
 import io.github.spritzsn.cors
 import io.github.spritzsn.serve_static
 
@@ -9,6 +9,7 @@ import io.github.spritzsn.serve_static
   Server("ExampleServer/1.0") { app =>
     app
       .use(JSON())
+      .use(urlencoded())
       .use(cors())
       .use(responseTime())
       .use("/project", serve_static("project"))
