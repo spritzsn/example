@@ -4,6 +4,7 @@ import io.github.spritzsn.spritz.{Request, Response, Server, responseTime}
 import io.github.spritzsn.body_parser.{urlencoded, JSON}
 import io.github.spritzsn.cors
 import io.github.spritzsn.serve_static
+import io.github.spritzsn.logger
 
 @main def run(): Unit =
   Server("ExampleServer/1.0") { app =>
@@ -12,6 +13,7 @@ import io.github.spritzsn.serve_static
       .use(urlencoded())
       .use(cors())
       .use(responseTime())
+      .use(logger("dev", "access.log"))
       .use("/project", serve_static("project"))
       .get("/", (_: Request, res: Response) => res.send("hello"))
       .post("/", (req: Request, res: Response) => res.send(req.body))
