@@ -13,7 +13,7 @@ import io.github.spritzsn.logger
       .use(urlencoded())
       .use(cors())
       .use(responseTime())
-      .use(logger("dev", "access.log"))
+      .use(logger("dev" /*, "access.log"*/ ))
       .use("/project", serve_static("project"))
       .get("/", (_: Request, res: Response) => res.send("hello"))
       .post("/", (req: Request, res: Response) => res.send(req.body))
