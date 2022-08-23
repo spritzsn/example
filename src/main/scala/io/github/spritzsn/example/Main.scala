@@ -25,6 +25,7 @@ import io.github.spritzsn.compression
           ),
       )
       .post("/", (req: Request, res: Response) => res.send(req.body))
+      .post("/empty", (req: Request, res: Response) => res.status(204))
     app.listen(3000)
     println("listening")
   }
