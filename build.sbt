@@ -41,7 +41,7 @@ homepage := Some(url("https://github.com/spritzsn/" + name.value))
 
 libraryDependencies ++= Seq(
   "io.github.spritzsn" %%% "spritz" % "0.0.23",
-  "io.github.spritzsn" %%% "body-parser" % "0.0.4",
+  "io.github.spritzsn" %%% "body-parser" % "0.0.5",
   "io.github.spritzsn" %%% "cors" % "0.0.2",
   "io.github.spritzsn" %%% "serve-static" % "0.0.3",
   "io.github.spritzsn" %%% "logger" % "0.0.5",
