@@ -1,7 +1,7 @@
 package io.github.spritzsn.example
 
-import io.github.spritzsn.spritz.{Request, Response, Server, responseTime}
-import io.github.spritzsn.body_parser.{urlencoded, json}
+import io.github.spritzsn.spritz.{Request, Response, Server, responseTime, HandlerResult}
+import io.github.spritzsn.body_parser.{json, urlencoded}
 import io.github.spritzsn.cors
 import io.github.spritzsn.serve_static
 import io.github.spritzsn.logger
@@ -17,6 +17,11 @@ import io.github.spritzsn.compression
       .use(responseTime())
       .use(logger("dev" /*, "access.log"*/ ))
       .use("/project", serve_static("project"))
+      //      .use((req: Request, res: Response) => {
+      //        println(req.headers)
+      //        res.action(println(res.headers))
+      //        HandlerResult.Next
+      //      })
       .get("/", (req: Request, res: Response) => res.send("hello"))
       .get(
         "/long",
