@@ -1,6 +1,6 @@
 package io.github.spritzsn.example
 
-import io.github.spritzsn.spritz.{Request, Response, Server, responseTime, HandlerResult}
+import io.github.spritzsn.spritz.{Server, responseTime, HandlerResult}
 import io.github.spritzsn.body_parser.{json, urlencoded}
 import io.github.spritzsn.cors
 import io.github.spritzsn.serve_static
