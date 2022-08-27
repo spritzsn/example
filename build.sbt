@@ -40,12 +40,12 @@ homepage := Some(url("https://github.com/spritzsn/" + name.value))
 //libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.13" % "test"
 
 libraryDependencies ++= Seq(
-  "io.github.spritzsn" %%% "spritz" % "0.0.30",
-  "io.github.spritzsn" %%% "body-parser" % "0.0.5",
-  "io.github.spritzsn" %%% "cors" % "0.0.2",
+  "io.github.spritzsn" %%% "spritz" % "0.0.31",
+  "io.github.spritzsn" %%% "body-parser" % "0.0.7",
+  "io.github.spritzsn" %%% "cors" % "0.0.3",
   "io.github.spritzsn" %%% "serve-static" % "0.0.3",
-  "io.github.spritzsn" %%% "logger" % "0.0.5",
-  "io.github.spritzsn" %%% "compression" % "0.0.5",
+  "io.github.spritzsn" %%% "logger" % "0.0.6",
+  "io.github.spritzsn" %%% "compression" % "0.0.6",
 )
 
 publishMavenStyle := true

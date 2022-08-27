@@ -17,15 +17,15 @@ import io.github.spritzsn.compression
       .use(responseTime())
       .use(logger("dev" /*, "access.log"*/ ))
       .use("/project", serve_static("project"))
-      //      .use((req: Request, res: Response) => {
+      //      .use((req, res) => {
       //        println(req.headers)
       //        res.action(println(res.headers))
       //        HandlerResult.Next
       //      })
-      .get("/", (req: Request, res: Response) => res.send("hello"))
+      .get("/", (req, res) => res.send("hello"))
       .get(
         "/long",
-        (_: Request, res: Response) =>
+        (_, res) =>
           res.send(
             """
               |The result is a clear indication of a compressed result, in the Content-Encoding: gzip HTTP header.
@@ -34,8 +34,8 @@ import io.github.spritzsn.compression
               |""".stripMargin,
           ),
       )
-      .post("/", (req: Request, res: Response) => res.send(req.body))
-      .post("/empty", (req: Request, res: Response) => res.status(204))
+      .post("/", (req, res) => res.send(req.body))
+      .post("/empty", (req, res) => res.status(204))
     app.listen(3000)
     println("listening")
   }
