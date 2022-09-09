@@ -43,7 +43,7 @@ libraryDependencies ++= Seq(
   "io.github.spritzsn" %%% "spritz" % "0.0.37",
   "io.github.spritzsn" %%% "body-parser" % "0.0.7",
   "io.github.spritzsn" %%% "cors" % "0.0.3",
-  "io.github.spritzsn" %%% "serve-static" % "0.0.6",
+  "io.github.spritzsn" %%% "serve-static" % "0.0.7",
   "io.github.spritzsn" %%% "logger" % "0.0.7",
   "io.github.spritzsn" %%% "compression" % "0.0.6",
 )
