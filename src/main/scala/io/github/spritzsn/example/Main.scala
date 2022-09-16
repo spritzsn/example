@@ -16,7 +16,7 @@ import io.github.spritzsn.compression
       .use(compression())
       .use(responseTime())
       .use(logger("dev" /*, "access.log"*/ ))
-      .use("/project", serve_static("project"))
+      .use("/website", serve_static("website"))
       //      .use((req, res) => {
       //        println(req.headers)
       //        res.action(println(res.headers))
