@@ -16,13 +16,13 @@ import io.github.spritzsn.compression
       .use(compression())
       .use(responseTime())
       .use(logger("dev" /*, "access.log"*/ ))
-      .use("/website", serve_static("website"))
+      .use("/", serve_static("website"))
       //      .use((req, res) => {
       //        println(req.headers)
       //        res.action(println(res.headers))
       //        HandlerResult.Next
       //      })
-      .get("/", (req, res) => res.send("hello"))
+      .get("/hello", (req, res) => res.send("hello"))
       .get(
         "/long",
         (_, res) =>
