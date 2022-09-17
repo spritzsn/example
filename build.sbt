@@ -41,11 +41,11 @@ homepage := Some(url("https://github.com/spritzsn/" + name.value))
 
 libraryDependencies ++= Seq(
   "io.github.spritzsn" %%% "spritz" % "0.0.42",
-  "io.github.spritzsn" %%% "body-parser" % "0.0.7",
-  "io.github.spritzsn" %%% "cors" % "0.0.3",
+  "io.github.spritzsn" %%% "body-parser" % "0.0.8",
+  "io.github.spritzsn" %%% "cors" % "0.0.4",
   "io.github.spritzsn" %%% "serve-static" % "0.0.11",
-  "io.github.spritzsn" %%% "logger" % "0.0.7",
-  "io.github.spritzsn" %%% "compression" % "0.0.6",
+  "io.github.spritzsn" %%% "logger" % "0.0.8",
+  "io.github.spritzsn" %%% "compression" % "0.0.7",
 )
 
 publishMavenStyle := true
